@@ -1,0 +1,146 @@
+/* General styles for the navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3d24f; /* Yellow background */
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Adjust to size of the icon */
+    margin-right: 10px;
+}
+
+.mainTitle {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1.8em; /* Adjust the size as needed */
+}
+
+.pageNav {
+    display: flex;
+    align-items: center;
+}
+
+.pageNav a {
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 1em; /* Adjust size */
+}
+
+.pageNav a.active {
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: 100%; /* Position it below the dropdown link */
+    left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Hover effect */
+}
+
+
+
+
+
+/* Parent container to display text and image side by side */
+.content-block-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Black background */
+    padding: 40px;
+    color: white; /* White text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Text container */
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.text-content h2::before {
+    content: "「";
+    color: #00a6ff; /* Light blue */
+    font-size: 1.5em;
+    position: absolute;
+    left: -60px;
+    top: -25px;
+}
+
+.text-content h2::after {
+    content: "」";
+    color: #00a6ff; /* Light blue */
+    font-size: 1.5em;
+    position: absolute;
+    right: -20px;
+    top: -15px;
+}
+
+/* Paragraph styling */
+.text-content p {
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+.more-on-button {
+    display: inline-block;
+    background-color: #f3d24f; /* Yellow button */
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.more-on-button:hover {
+    background-color: #ffcc00; /* Darken the button on hover */
+}
+
+/* Image container */
+.image-content img {
+    width: 600px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 10px; /* Adds a slight curve to the image */
+}

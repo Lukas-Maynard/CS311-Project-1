@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pending title</title>
     <link rel="stylesheet" href="style.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    </style>
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="/images/home/small-jwst-icon.png" alt="Top Icon"/> <!-- Update path if needed -->
+            <img src="images/home/small-jwst-icon.png" alt="Top Icon"/> <!-- Update path if needed -->
             <h1 class="mainTitle">James Webb Space Telescope</h1>
         </div>
         <div class="pageNav">
@@ -24,28 +27,30 @@
                 </div>
             </div>
         </div>
-    </nav>    
-    <div> <!--init splash screen with large pic-->
-        <div> <!--words and button -->
+    </nav>
+    <div class="splash_screen"> <!--init splash screen with large pic-->
+        <div class="splash_screen_text"> <!--words and button -->
             <p>The newest Space telescope takes its first pictures providing the farthest look into space.</p>
-            <button>View Pictures</button>
+            <a href="images.html"><button class="more-on-button-splash">View Pictures</button></a>
         </div>
-        <img src="/images/home/JWST.png" alt="James Webb space telescope large image"/> <!-- get pic -->
+        <div class="splash_screen_img">
+            <img src="images/home/JWST.png" alt="James Webb space telescope large image"/> <!-- get pic -->
+        </div>
     </div>
-    <div> <!--triple block section (could generate with JS???)-->
-        <div> <!--block 1-->
+    <div class="triple_blocks"> <!--triple block section (could generate with JS???)-->
+        <div class="triple_block"> <!--block 1-->
             <h1>Why that shape?</h1>
             <p>Why is it made with hexagons?</p>
             <hr>
             <button>Read More</button>
         </div>
-        <div> <!--block 2-->
+        <div class="triple_block"> <!--block 2-->
             <h1>Why those colors?</h1>
             <p>It is gold and pink for good reasons!</p>
             <hr>
             <button>Read More</button>
         </div>
-        <div> <!--block 3-->
+        <div class="triple_block"> <!--block 3-->
             <h1>Whats inside?</h1>
             <p>What are the instruments that make it run?</p>
             <hr>
@@ -55,40 +60,51 @@
 
     <hr>
     <h1>LEARN MORE FROM NASA</h1>
-    <div> <!--image line of nasa links, get images (separate differently/better??)-->
-        <h2>Nasa Site</h2>
-        <img src="/images/home/nasa-logo-1.png" alt="Nasa logo image"/>
+    <div class="learn_more_images"> <!--image line of nasa links, get images (separate differently/better??)-->
+        <div class="learn_more_images_block">
+            <h2>Nasa Site</h2>
+            <img src="images/home/nasa-logo-1.png" alt="Nasa logo image"/>
+        </div>
 
-        <h2>First Star & Selfie</h2>
-        <img src="/images/home/webb-selfie.png" alt="JWST Selfie image"/>
+        <div class="learn_more_images_block">
+            <h2>First Star & Selfie</h2>
+            <img src="images/home/webb-selfie.png" alt="JWST Selfie image"/>
+        </div>
+        
+        <div class="learn_more_images_block">
+            <h2>First Images</h2>
+            <img src="images/home/carina-nebula-square.jpg" alt="Corina nebula image"/>
+        </div>
 
-        <h2>First Images</h2>
-        <img src="images/home/carina-nebula-square.jpg" alt="Corina nebula image"/>
-
-        <h2>All Webb Images</h2>
-        <img src="images/home/just-webb.jpg" alt="JWST image"/>
+        <div class="learn_more_images_block">
+            <h2>All Webb Images</h2>
+            <img src="images/home/just-webb.jpg" alt="JWST image"/>
+        </div>
     </div>
 
     <footer>
-        <div><!--column 1 (needs reworked)-->
+        <div class="footer-column">
             <h3>About</h3>
             <p>
-                ©2022 <a href="">WebbWonders</a><br>
+                ©2022 <a href="#">WebbWonders</a><br>
                 Student project Website
             </p>
         </div>
-        <div><!--column 2-->
+        <div class="footer-column">
             <h3>Navigation</h3>
             <a href="index.html">Home</a>
             <a href="images.html">Images</a>
             <div class="dropdownBottomNav">
-                <a href="#underthescope">Under the Scope &#9662;</a> <!-- Down arrow symbol -->
+                <a href="#underthescope">Under the Scope &#9662;</a> <!-- down arrow -->
                 <div class="dropdown-content">
                     <a href="build.html">Build</a>
                     <a href="materials.html">Materials</a>
                     <a href="instruments.html">Instruments</a>
                 </div>
-            </div><!-- essentually the top nav dropdown but in the footer --> 
+            </div>
+        </div>
+        <div class="footer-column footer-logo">
+            <img src="images/home/small-jwst-icon.png" alt="Footer Logo" />
         </div>
     </footer>
 </body>

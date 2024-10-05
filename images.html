@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    </style>
 </head>
 <body>
 
-    <!--INPUT NAV WHEN COMPLETE-->
+    <nav>
+        <div class="logo">
+            <img src="images/home/small-jwst-icon.png" alt="Top Icon"/> <!-- Update path if needed -->
+            <h1 class="mainTitle">James Webb Space Telescope</h1>
+        </div>
+        <div class="pageNav">
+            <a href="index.html">Home</a>
+            <a href="images.html" class="active">Images</a>
+            <div class="dropdown">
+                <a>Under the Scope &#9662;</a> <!-- Down arrow symbol -->
+                <div class="dropdown-content">
+                    <a href="build.html">Build</a>
+                    <a href="materials.html">Materials</a>
+                    <a href="instruments.html">Instruments</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="images_header">
+        <p>Images</p>
+        <hr>
+    </div>
 
     <div class="content-block-left">
         <div class="text-content">
@@ -26,15 +51,60 @@
         </div>
     </div>
     
+    <div class="background-gap"></div>
 
-    <div><!--image/text block-->
-        <div>
-            <img src="" alt="">
+    <div class="content-block-left"><!--image/text block-->
+        <div class="image-content">
+            <img src="images/images/Stephans-Quintet.jpg" alt="Stephan’s Quintet image">
         </div>
-        <div>
-            <h2></h2>
-            <p></p>
-            <button></button>
+        <div class="text-content">
+            <h2>Stephan’s Quintet</h2>
+            <p>
+                A visual grouping of five galaxies. This is Webb’s largest image to date. It contains over 150 million pixels 
+                and is constructed from almost 1,000 separate image files. Webb captures huge shock waves as one of the galaxies, 
+                NGC 7318B, smashes through the cluster. The leftmost galaxy is 40 million light-years away while the other 4 are 
+                roughly 290 million light-years away.
+            </p>
+            <a class="more-on-button" href="https://web.archive.org/web/20230313192554/https://www.nasa.gov/image-feature/goddard/2022/nasa-s-webb-sheds-light-on-galaxy-evolution-black-holes" target="_blank">
+                More on Stephan’s Quintet
+            </a>
+        </div>
+    </div>
+
+    <div class="background-gap"></div>
+
+    <div class="content-block-left">
+        <div class="text-content">
+            <h2>Southern Ring Nebula</h2>
+            <p>
+                The dimmer star at the center of this scene has been sending out rings of gas and dust for 
+                thousands of years in all directions. The nebula is approximately 2,500 light-years away.
+            </p>
+            <a class="more-on-button" href="https://web.archive.org/web/20230313192600/https://www.nasa.gov/image-feature/goddard/2022/nasa-s-webb-captures-dying-star-s-final-performance-in-fine-detail/" target="_blank">
+                More on Southern Ring Nebula
+            </a>
+        </div>
+        <div class="image-content">
+            <img src="images/images/Southern-Ring-Nebula.jpg" alt="Southern Ring Nebula image">
+        </div>
+    </div>
+
+    <div class="background-gap"></div>
+
+    <div class="content-block-left"><!--image/text block-->
+        <div class="image-content">
+            <img src="images/images/Stephans-Quintet.jpg" alt="Stephan’s Quintet image">
+        </div>
+        <div class="text-content">
+            <h2>Webb’s First Deep Field</h2>
+            <p>
+                This image shows the galaxy cluster SMACS 0723 as it appeared 4.6 billion years ago, 
+                with many more galaxies in front of and behind the cluster. Within this deep field image 
+                there are thousands of galaxies including the faintest objects ever observed in the infrared.
+            </p>
+            <a class="more-on-button" href="https://web.archive.org/web/20230324093201/https://www.nasa.gov/image-feature/goddard/2022/nasa-s-webb-delivers-deepest-infrared-image-of-universe-yet/" target="_blank">
+                More on this deep field image
+            </a>
         </div>
     </div>
 

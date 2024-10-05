@@ -26,7 +26,7 @@ nav {
 }
 
 .logo img {
-    width: 50px;
+    width: 100px;
     margin-right: 10px;
 }
 
@@ -57,7 +57,7 @@ nav {
 
 .pageNav a.active {
     font-weight: bold; 
-    color: skyblue;
+    color: #5a94f2;
 }
 
 .dropdown {
@@ -221,7 +221,7 @@ nav {
     width: 20%;
 }
 
-.learn_more_images_block > img{
+.learn_more_images_block > a > img{
     width: 100%;
     /* max-width: fit-content; */
     margin-left: auto;
